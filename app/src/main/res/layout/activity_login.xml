@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <!-- <android.support.design.widget.AppBarLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:theme="@style/AppTheme.AppBarOverlay">
+
+         <android.support.v7.widget.Toolbar
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:background="?attr/colorPrimary"
+             app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+     </android.support.design.widget.AppBarLayout>
+
+     <include layout="@layout/content_login" />
+
+     <android.support.design.widget.FloatingActionButton
+         android:id="@+id/fab"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="bottom|end"
+         android:layout_margin="@dimen/fab_margin"
+         app:srcCompat="@android:drawable/ic_dialog_email" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/login_title"
+        android:textSize="@dimen/textsize_bigger" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_error"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/iv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/iv_account"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/login_account"
+                android:maxLength="7"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textsize_small" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_error"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/iv_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="2dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/iv_pwd"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/login_pwd"
+                android:maxLength="7"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/textsize_small" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/bg_colorPrimaryLine">
+    </View>
+
+    <RadioGroup
+        android:id="@+id/rg_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default">
+        <RadioButton
+            android:id="@+id/rb_total_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login_total_warehouse" />
+
+        <RadioButton
+            android:id="@+id/rb_spare_parts_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login_spare_parts_warehouse" />
+
+        <RadioButton
+            android:id="@+id/rb_production_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login_production_line" />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/bg_colorPrimaryLine">
+    </View>
+    <RadioGroup
+        android:id="@+id/rg_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default">
+        <RadioButton
+            android:id="@+id/rb_eisoo_shanghai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login_eisoo_shanghai" />
+
+        <RadioButton
+            android:id="@+id/rb_eisoo_beijing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login_eisoo_beijing"/>
+
+        <RadioButton
+            android:id="@+id/rb_eisoo_shanghai_fanxiang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/login_eisoo_shanghai_fanxiang" />
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/bg_colorPrimaryLine">
+    </View>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn_text"
+        android:layout_marginTop="@dimen/margin_medium"/>
+</LinearLayout>

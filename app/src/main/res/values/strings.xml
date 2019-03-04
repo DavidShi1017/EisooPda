@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EisooPda</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="login_title">爱数PDA系统</string>
+    <string name="login_account">账号</string>
+    <string name="login_pwd">密码</string>
+    <string name="login_btn_text">登录</string>
+
+    <string name="login_total_warehouse">总仓</string>
+    <string name="login_spare_parts_warehouse">备件仓</string>
+    <string name="login_production_line">生产线</string>
+
+    <string name="login_eisoo_shanghai">上海爱数5599</string>
+    <string name="login_eisoo_beijing">北京爱数越睿5566</string>
+    <string name="login_eisoo_shanghai_fanxiang">上海凡响5568</string>
+</resources>
